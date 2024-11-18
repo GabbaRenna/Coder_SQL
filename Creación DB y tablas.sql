@@ -56,9 +56,9 @@ FOREIGN KEY (producto_id) REFERENCES productos (producto_id));
 
 DROP TABLE IF EXISTS ordenes_productos;
 CREATE TABLE ordenes_productos (
-    orden_id VARCHAR(20),
-    producto_id VARCHAR(20),
-    cantidad_producto INT,
-    PRIMARY KEY (orden_id, producto_id),
-    FOREIGN KEY (orden_id) REFERENCES ordenes(orden_id),
-    FOREIGN KEY (producto_id) REFERENCES productos(producto_id));
+orden_id VARCHAR(20),
+producto_id VARCHAR(20),
+cantidad_producto INT,
+PRIMARY KEY (orden_id, producto_id),
+FOREIGN KEY (orden_id) REFERENCES ordenes(orden_id),
+FOREIGN KEY (producto_id) REFERENCES productos(producto_id));
